@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+html{
+    background: url('./images/bg-desktop.svg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 64px;
+}
+
+.logo{
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+.left{
+    flex: 1;
+    width: fit-content;
+    padding: 20px;
+}
+
+.left img{
+    width: 650px;
+    height: auto;
+}
+
+.right{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.right h1{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.right p{
+    color: white;
+    font-weight: normal;
+}
+
+
+
+.register{
+    background-color: white;
+    padding: 8px 24px;
+    width: 120px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.register:hover{
+    background-color:  hsl(300, 69%, 71%);
+}
+
+.register a{
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+}
+
+.register a:hover{
+    color: white;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: right;
+}
+
+.social-icons i{
+    border: 1px solid white;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.social-icons i:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+
+@media only screen and (max-width: 768px) {
+    html {
+      background-image: url('./images/bg-mobile.svg');
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+    }
+
+    .logo img{
+        width: 200px;
+    }
+
+    .left img{
+        width: 350px;
+    }
+
+    .right h1{
+        text-align: center;
+    }
+
+    .right p{
+        text-align: center;
+    }
+
+    .register{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .social-icons{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+  }
